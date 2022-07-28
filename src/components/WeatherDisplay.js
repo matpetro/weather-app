@@ -27,7 +27,7 @@ function WeatherDisplay() {
 
         //get forecasted weather
         async function getWeather() {
-            const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=af40cd5b454348dfb38235910222406&q=${currentLocation}&days=7`);
+            const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=af40cd5b454348dfb38235910222406&q=${currentLocation}&days=7`);
             const data = await res.json();
             setWeather(data);
             //console.log(data);

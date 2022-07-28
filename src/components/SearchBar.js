@@ -28,7 +28,7 @@ function SearchBar(props){
         props.changeLocation(event.target.innerText);
         setTextInput("");
     }
-    console.log(props.suggestions)
+    //console.log(props.suggestions)
 
     return (
         <div className="submission">
